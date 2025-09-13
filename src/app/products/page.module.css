@@ -1,0 +1,134 @@
+.productsPage {
+	padding: 10px 180px 90px 180px;
+	min-height: 100vh;
+	margin-top: 40px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-bottom: 40px;
+}
+
+.headerLeft {
+	text-align: left;
+	color: var(--dark-gray);
+	font-family: var(--font-rubik);
+	font-size: 8rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 8rem;
+	text-transform: uppercase;
+}
+
+.headerRight {
+	color: var(--neutrals-gray);
+	font-family: var(--font-rubik);
+	font-size: 2rem;
+	font-style: normal;
+	font-weight: 500;
+}
+
+.productsGrid {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+}
+
+@media screen and (max-width: 1536px) {
+	.productsPage {
+		padding: 0 150px 90px 150px;
+	}
+
+	.headerLeft {
+		font-size: 6.8rem;
+		line-height: 6.4rem;
+	}
+
+	.headerRight {
+		font-size: 1.8rem;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.productsPage {
+		padding-left: 60px;
+		padding-right: 60px;
+		padding-bottom: 80px;
+	}
+
+	.headerLeft {
+		font-size: 5.6rem;
+		line-height: 5.8rem;
+	}
+
+	.headerRight {
+		font-size: 1.6rem;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.productsPage {
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-top: 20px;
+		padding-bottom: 60px;
+	}
+
+	.headerLeft {
+		font-size: 4.6rem;
+		line-height: 4.6rem;
+	}
+
+	.headerRight {
+		font-size: 1.4rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.productsPage {
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 16px;
+		padding-bottom: 40px;
+	}
+
+	.headerLeft {
+		font-size: 3.8rem;
+		line-height: 4rem;
+	}
+
+	.headerRight {
+		font-size: 1.2rem;
+	}
+}
+
+@media screen and (max-width: 568px) {
+	.productsPage {
+		padding-left: 16px;
+		padding-right: 16px;
+		padding-top: 6px;
+		padding-bottom: 20px;
+	}
+
+	.headerLeft {
+		font-size: 3rem;
+		line-height: 3.4rem;
+	}
+
+	.headerRight {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.headerLeft {
+		font-size: 2.2rem;
+		line-height: 2.8rem;
+	}
+
+	.headerRight {
+		font-size: 0.9rem;
+	}
+}

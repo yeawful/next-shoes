@@ -1,0 +1,142 @@
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: var(--font-rubik);
+}
+
+.productDetail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+  margin: 20px 180px;
+}
+
+.imageSection {
+  position: relative;
+}
+
+.mainImage {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  border-radius: 32px;
+  overflow: hidden;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.title {
+  color: var(--dark-gray);
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.category {
+  color: var(--dark-gray);
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.price {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--yellow);
+  margin: 0;
+}
+
+.newTag {
+  display: inline-block;
+  padding: 0.8rem 1rem;
+  background-color: var(--blue);
+  color: white;
+  border-radius: 32px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.addToCartButton {
+  padding: 1rem 2rem;
+  background-color: var(--dark-gray);
+  color: white;
+  border: none;
+  border-radius: 32px;
+  font-family: var(--font-rubik);
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.addToCartButton:hover {
+  background-color: #333;
+}
+
+.backLink {
+  color: #666;
+  text-decoration: none;
+  font-family: var(--font-rubik);
+  font-size: 1.6rem;
+}
+
+.backLink:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.error {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.error h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1536px) {
+  .productDetail {
+    margin: 20px 150px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .productDetail {
+    margin: 20px 60px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .productDetail {
+    margin: 20px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .productDetail {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 20px 30px;
+  }
+
+  .mainImage {
+    height: 300px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .productDetail {
+    margin: 20px 16px;
+  }
+}

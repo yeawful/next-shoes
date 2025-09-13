@@ -1,0 +1,21 @@
+{
+  "name": "next-shoes-server",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "ts-node-dev index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/node": "^20",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5"
+  }
+}
