@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<img width="668" height="786" alt="image" src="https://github.com/user-attachments/assets/4b9d7b0b-be83-4bf1-8268-41a52924c4b8" />
 
-## Getting Started
+# KICKS - E-commerce Shoe Store
 
-First, run the development server:
+Современный интернет-магазин обуви, построенный на стеке **Next.js** с собственным **Express.js API** сервером.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🛠 Технологии
+
+**Frontend:**
+*   **Next.js 15** (с App Router и Turbopack)
+*   **React 19**
+*   **TypeScript** - для типобезопасности
+*   **CSS Modules** - для стилизации
+
+**Backend:**
+*   **Node.js** + **Express.js** - серверная часть
+*   **TypeScript** - на всей codebase
+*   **CORS** - для взаимодействия клиента и сервера
+
+**Инструменты:**
+*   **Biome** - линтер и форматтер (альтернатива ESLint + Prettier)
+*   **Concurrently** - для параллельного запуска клиента и сервера
+
+## 🚀 Ключевые особенности
+
+*   **Полностью на TypeScript**: Единые общие типы (`@shared/types`) для клиента и сервера.
+*   **Архитектура**: Разделение клиентского и серверного приложений within a monorepo-like структуре.
+*   **Сервер с данными**: REST API, отдающее продукты, категории и отзывы с поддержкой query-параметров (`category`, `limit`, `newRelease`).
+*   **Адаптивный UI**: Включает Hero-секцию, карусели, карточки товаров и отзывов.
+*   **Статическая генерация (SSG)**: Страницы используют `revalidate` для инкрементального статического перегенерации.
+
+## 📦 Структура проекта
+
+```
+├── src/                 # Next.js приложение (клиент)
+├── server/              # Express API сервер
+├── shared/              # Общие типы TypeScript
+├── public/              # Статические assets (изображения, иконки)
+└── package.json         # Скрипты для запуска всего проекта
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Запуск проекта
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1.  **Установите зависимости:**
+    ```bash
+    npm install
+    cd server && npm install && cd ..
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2.  **Запустите клиент и сервер одновременно:**
+    ```bash
+    npm run dev:all
+    ```
+    *   Клиент: http://localhost:3000
+    *   Сервер (API): http://localhost:5000
