@@ -25,7 +25,7 @@ export default function Hero() {
         <div className={styles.product}>
           <h2>NIKE AIR MAX</h2>
           <p>{"Nike introducing the new air max for everyone's comfort"}</p>
-          <Link href="/">SHOP NOW</Link>
+          <Link href="/products">SHOP NOW</Link>
         </div>
         <div className={styles.imageContainer}>
           <Image
