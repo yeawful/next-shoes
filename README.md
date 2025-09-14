@@ -53,12 +53,3 @@
     ```
     *   Клиент: http://localhost:3000
     *   Сервер (API): http://localhost:5000
-
-*или по отдельности:*
-```bash
-# Terminal 1: Запуск сервера
-npm run dev:server
-
-# Terminal 2: Запуск клиента
-npm run dev
-```
