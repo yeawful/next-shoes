@@ -15,11 +15,11 @@ RUN cd server && npm install
 # Копируем весь код
 COPY . .
 
-# Собираем приложение
-RUN npm run build
+# Убираем билд во время сборки образа
+# RUN npm run build
 
 # Открываем порт
 EXPOSE 3000
 
 # Запускаем приложение
-CMD ["npm", "run", "dev:all"]
+CMD ["sh", "-c", "npm run build && npm run dev:all"]
