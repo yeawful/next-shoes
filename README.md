@@ -53,3 +53,17 @@
     ```
     *   Клиент: http://localhost:3000
     *   Сервер (API): http://localhost:5000
+
+
+
+### Docker Development
+
+**Соберите и запустите контейнеры:**
+    ```bash
+    npm run docker:build
+    npm run docker:up
+    ```
+    или одной командой:
+    ```bash
+    docker-compose up --build
+    ```
